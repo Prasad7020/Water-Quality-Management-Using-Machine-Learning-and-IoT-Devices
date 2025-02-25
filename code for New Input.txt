@@ -1,0 +1,10 @@
+new_sample = np.array([[7.5, 4.2, 5.5]])
+
+# Use the trained Random Forest model to predict
+prediction = classifier_RF.predict(new_sample)
+
+# Output the result
+if prediction[0] == 1:
+    print("The water sample is SAFE for drinking.")
+else:
+    print("The water sample is NOT SAFE for drinking.")
